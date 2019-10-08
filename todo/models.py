@@ -34,6 +34,9 @@ class ToDo(models.Model):
         null=True,
     )
 
+    def __str__(self):
+        return self.title_text
+
 class Tag(models.Model):
     todo = models.ForeignKey(
         ToDo,
@@ -44,6 +47,9 @@ class Tag(models.Model):
         max_length=20,
     )
 
+    def __str__(self):
+        return self.name
+
 class Category(models.Model):
     class Meta:
         verbose_name_plural = "categories"
@@ -51,3 +57,6 @@ class Category(models.Model):
         max_length=20,
         primary_key=True,
     )
+
+    def __str__(self):
+        return self.name
