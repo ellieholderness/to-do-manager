@@ -1,15 +1,7 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Homepage for Ellie's To-Do Manager.</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="/static/admin/css/fonts.css">
-    </head>
-    <body>
-      <main>
-        <h2>This is the homepage! Congratulations!</h2>
-        <p> Go <a href="/todo">here</a> to see to-dos, and <a href="/admin">here</a> for the admin page.</p>
-      </main>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+  <main>
+    <h2>This is the homepage! Congratulations!</h2>
+    <p> Go <a href="/todo">here</a> to see to-dos, and <a href="/admin">here</a> for the admin page.</p>
+  </main>
+{% endblock %}

@@ -41,7 +41,7 @@ class ToDo(models.Model):
         )
 
     def tags(self):
-        return ", ".join([str(t) for t in self.tags.all()])
+        return ", ".join([str(t) for t in self.tag_list.all()])
 
     def __str__(self):
         return self.title_text
