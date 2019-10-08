@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+    {% block head %}
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -8,10 +9,9 @@
         <title>{% block title %}To-Do Manager{% endblock %}</title>
 
         <link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
-        {% comment %}
-        <link rel="stylesheet" href="{% static "application.css" %}?v=2">
-        {% endcomment %}
+        <link rel="stylesheet" type="text/css" href="{% static 'global-style.css' %}">
     </head>
+    {% endblock %}
     <body>
     	{% block content %}
     	{% endblock %}
