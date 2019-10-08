@@ -9,11 +9,13 @@ class ToDo(models.Model):
     notes = models.CharField(
         max_length=500,
         null=True,
+        blank=True,
     )
 
     do_by_date = models.DateField(
         'Do-by date',
         null=True,
+        blank=True,
     )
 
     parent = models.ForeignKey(
@@ -22,13 +24,13 @@ class ToDo(models.Model):
         related_name='children',
         related_query_name='child',
         null=True,
+        blank=True,
     )
 
     category = models.ForeignKey(
         'Category',
         on_delete=models.PROTECT,
         related_name='todos',
-        related_query_name='todo',
         null=True,
     )
 
@@ -47,4 +49,5 @@ class Category(models.Model):
         verbose_name_plural = "categories"
     name = models.CharField(
         max_length=20,
+        primary_key=True,
     )
