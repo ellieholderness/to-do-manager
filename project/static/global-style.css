@@ -1,5 +1,17 @@
-li a {
-	color: pink;
+h1, h2, p {
+	margin: 50px;
+}
+
+
+
+a {
+	color: blue;
+	font-weight: bold;
+}
+
+a:visited {
+	color: purple;
+	font-weight: bold;
 }
 
 body {
