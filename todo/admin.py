@@ -14,6 +14,7 @@ class ToDoAdmin(admin.ModelAdmin):
 		'do_by_date',
 		'parent',
 		'category',
+		'tags',
 	)
 
 

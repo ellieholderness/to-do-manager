@@ -34,11 +34,14 @@ class ToDo(models.Model):
         null=True,
     )
 
-    tags = models.ManyToManyField(
+    tag_list = models.ManyToManyField(
         'Tag',
         related_name='todos',
         blank=True,
         )
+
+    def tags(self):
+        return ", ".join([str(t) for t in self.tags.all()])
 
     def __str__(self):
         return self.title_text
