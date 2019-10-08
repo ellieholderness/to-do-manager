@@ -34,15 +34,16 @@ class ToDo(models.Model):
         null=True,
     )
 
+    tags = models.ManyToManyField(
+        'Tag',
+        related_name='todos',
+        blank=True,
+        )
+
     def __str__(self):
         return self.title_text
 
 class Tag(models.Model):
-    todo = models.ForeignKey(
-        ToDo,
-        on_delete=models.CASCADE,
-    )
-
     name = models.CharField(
         max_length=20,
     )
