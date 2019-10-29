@@ -17,3 +17,10 @@ a:visited {
 body {
 	background: #E1D0E5;
 }
+
+nav.navbar {
+	background-color: black;
+	color: #DCD8D7;
+	font-weight: bold;
+	font-size: 136%;
+}

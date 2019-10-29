@@ -13,6 +13,24 @@
     </head>
     {% endblock %}
     <body>
+        <nav class="navbar">
+            <div class="container">
+                <div id="navbar">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ToDo <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url "index" %}">
+                                <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;View
+                            </a></li>
+                            <li class="divider"></li>
+                            <li><a href="{% url "index" %}">
+                                <span class="glyphicon glyphicon-tint"></span>&nbsp;&nbsp;View again
+                            </a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </nav>
     	{% block content %}
     	{% endblock %}
     </body>
