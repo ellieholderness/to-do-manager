@@ -18,18 +18,18 @@
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">ToDoManager</a>
+                    <a class="navbar-brand" href="{% url "home" %}">ToDoManager</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" >ToDo<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url "index" %}">
+                            <li><a class="dropdown-item" href="{% url "todo_index" %}">
                                 <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;View
                             </a></li>
                             <div class="dropdown-divider"></div>
-                            <li><a class="dropdown-item" href="{% url "index" %}">
-                                <span class="glyphicon glyphicon-tint"></span>&nbsp;&nbsp;View again
+                            <li><a class="dropdown-item" href="{% url "todo_create" %}">
+                                <span class="glyphicon glyphicon-plus-sign"></span>&nbsp;&nbsp;Create
                             </a></li>
                         </ul>
                     </li>

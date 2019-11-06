@@ -2,7 +2,9 @@ h1, h2, p {
 	margin: 50px;
 }
 
-
+.container {
+	width: 200px;
+}
 
 a {
 	color: blue;
@@ -15,12 +17,12 @@ a:visited {
 }
 
 body {
-	background: #E1D0E5;
+	background: #D7DEE3;
 }
 
 nav.navbar {
 	background-color: black;
-	color: #DCD8D7;
+	color: #DDEDFC;
 	font-weight: bold;
 	font-size: 136%;
 }
