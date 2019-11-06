@@ -1,12 +1,11 @@
 {% extends 'base.html' %}
 {% load render_table from django_tables2 %}
-{% load crispy_forms_tags %}
 
 {% block content %}
 <main>
 	<div class="container">
 		<center><h2>ToDo Overview</h2></center>
-    	{% render_table table %}
+    	{% render_table table 'django_tables2/bootstrap.html' %}
 	</div>
 </main>
 {% endblock %}
