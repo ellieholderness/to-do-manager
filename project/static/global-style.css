@@ -3,7 +3,11 @@ h1, h2, p {
 }
 
 .container {
-	width: 200px;
+	width: 1000px;
+}
+
+.container-no-border {
+	width: 0px;
 }
 
 a {
@@ -17,7 +21,7 @@ a:visited {
 }
 
 body {
-	background: #D7DEE3;
+	background-color: #D7DEE3;
 }
 
 nav.navbar {

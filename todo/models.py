@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 class ToDo(models.Model):
@@ -45,6 +46,9 @@ class ToDo(models.Model):
 
     def __str__(self):
         return self.title_text
+
+    def get_absolute_url(self):
+        return reverse('todo_detail', args=[str(self.id)])
 
 class Tag(models.Model):
     name = models.CharField(

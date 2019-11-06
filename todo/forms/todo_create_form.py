@@ -4,6 +4,10 @@ from todo.models import ToDo
 class CreateTodoForm(forms.ModelForm):
 	class Meta:
 		model = ToDo
+		widgets = {
+			'tag_list': forms.CheckboxSelectMultiple()
+		}
+
 		fields = [
 			'title_text',
 			'notes',

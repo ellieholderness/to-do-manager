@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+	<div class="container">
+		<center><h2>ToDo entry {{ object.id }}</h2></center>
+		<div class="container">
+			<p>{{ object.title_text }}</p>
+			<p>{{ object.do_by_date }}</p>
+			<p>{{ object.notes }}</p>
+			<p>{{ object.category }}</p>
+		</div>
+	</div>
+</main>
+{% endblock %}
